@@ -9,20 +9,30 @@
         <fieldset>
             <legend>Volunteer Form</legend>
             <h2>My Info</h2>
-            <div><label>First Name: <input type="text"></label></div>
-            <div><label>Last Name: <input type="text"></label></div>
-            <div><label>Phone Number: </label></div>
-            <div><label>Email Address: </label></div>
+            <div>
+                <label>First Name: <input type="text" name="first_name_field"></label>
+            </div>
+            <div>
+                <label>Last Name: <input type="text" name="last_name_field"></label>
+            </div>
+            <div>
+                <label>Phone Number: <input type="text" name="phone_field"></label>
+            </div>
+            <div>
+                <label>Email Address: <input type="email" name="email_field"></label>
+            </div>
 
+            <div>
             <label>Gender:</label>
-            <input type="radio" name="gender" value="male">
+            <input type="radio" name="gender_field" value="male">
             <label for="male">Male</label>
-            <input type="radio" name="gender" value="male">
+            <input type="radio" name="gender_field" value="female">
             <label for="female">Female</label>
+            </div>
             
             <div>
             <label>Age: </label>
-            <select name="age">
+            <select name="age_field">
                 <option value="under 18">under 18</option>
                 <option value="18 - 24">18 - 24</option>
                 <option value="25 - 34">25 - 34</option>
@@ -34,41 +44,43 @@
             </div>
         </fieldset>
 
+        <input name="hidden_field" type="hidden" value="agrabowski">
+
         <fieldset>
             <legend>My Availability</legend>
             <label>Days Available:</label>
             <div>
-                <input type="checkbox" name="days" value="sunday">
+                <input type="checkbox" name="available_field" value="sunday">
                 <label for="sunday">Sunday</label>
             </div>
             <div>
-                <input type="checkbox" name="days" value="monday">
+                <input type="checkbox" name="available_field" value="monday">
                 <label for="monday">Monday</label>
             </div>
             <div>
-                <input type="checkbox" name="days" value="tuesday">
+                <input type="checkbox" name="available_field" value="tuesday">
                 <label for="monday">Tuesday</label>
             </div>
             <div>
-                <input type="checkbox" name="days" value="wednesday">
+                <input type="checkbox" name="available_field" value="wednesday">
                 <label for="wednesday">Wednesday</label>
             </div>
             <div>
-                <input type="checkbox" name="days" value="thursday">
+                <input type="checkbox" name="available_field" value="thursday">
                 <label for="thursday">Thursday</label>
             </div>
             <div>
-                <input type="checkbox" name="days" value="friday">
+                <input type="checkbox" name="available_field" value="friday">
                 <label for="friday">Friday</label>
             </div>
             <div>
-                <input type="checkbox" name="days" value="saturday">
+                <input type="checkbox" name="available_field" value="saturday">
                 <label for="saturday">Saturday</label>
             </div>
             <div>
             <label>Any Comments?</label>
             </div>
-            <textarea name="message" rows="10" cols="30"></textarea>
+            <textarea name="comments_field" rows="10" cols="30"></textarea>
         </fieldset>
         
         <input type="submit" value="Send Request">
