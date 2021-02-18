@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+    </head>
+    <body>
+        <form action="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+        <fieldset>
+            <legend>Volunteer Form</legend>
+            <h2>My Info</h2>
+            <div><label>First Name: <input type="text"></label></div>
+            <div><label>Last Name: <input type="text"></label></div>
+            <div><label>Phone Number: </label></div>
+            <div><label>Email Address: </label></div>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male">
+            <label for="female">Female</label>
+            
+            <div>
+            <label>Age: </label>
+            <select name="age">
+                <option value="under 18">under 18</option>
+                <option value="18 - 24">18 - 24</option>
+                <option value="25 - 34">25 - 34</option>
+                <option value="35 - 44">35 - 44</option>
+                <option value="45 - 54">45 - 54</option>
+                <option value="55 - 64">55 - 64</option>
+                <option value="65 and over">65 and over</option>
+            </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>My Availability</legend>
+            <label>Days Available:</label>
+            <div>
+                <input type="checkbox" name="days" value="sunday">
+                <label for="sunday">Sunday</label>
+            </div>
+            <div>
+                <input type="checkbox" name="days" value="monday">
+                <label for="monday">Monday</label>
+            </div>
+            <div>
+                <input type="checkbox" name="days" value="tuesday">
+                <label for="monday">Tuesday</label>
+            </div>
+            <div>
+                <input type="checkbox" name="days" value="wednesday">
+                <label for="wednesday">Wednesday</label>
+            </div>
+            <div>
+                <input type="checkbox" name="days" value="thursday">
+                <label for="thursday">Thursday</label>
+            </div>
+            <div>
+                <input type="checkbox" name="days" value="friday">
+                <label for="friday">Friday</label>
+            </div>
+            <div>
+                <input type="checkbox" name="days" value="saturday">
+                <label for="saturday">Saturday</label>
+            </div>
+            <div>
+            <label>Any Comments?</label>
+            </div>
+            <textarea name="message" rows="10" cols="30"></textarea>
+        </fieldset>
+        
+        <input type="submit" value="Send Request">
+        </form>
+
+    </body>
+</html>
