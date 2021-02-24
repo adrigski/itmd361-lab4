@@ -5,27 +5,27 @@
         <title>Volunteer Form</title>
     </head>
     <body>
+        <h1>Volunteer Form</h1>
         <form method="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
             <fieldset>
-            <legend>Volunteer Form</legend>
-            <h2>My Info</h2>
+            <legend>My Info</legend>
                 <div>
-                    <label>First Name: <input type="text" name="first_name_field"></label>
+                    <label>First Name: <input type="text" name="first_name_field" placeholder="enter first name"></label>
                 </div>
                 <div>
-                    <label>Last Name: <input type="text" name="last_name_field"></label>
+                    <label>Last Name: <input type="text" name="last_name_field" placeholder="enter last name"></label>
                 </div>
                 <div>
-                    <label>Phone Number: <input type="tel" name="phone_field"></label>
+                    <label>Phone Number: <input type="tel" name="phone_field" placeholder="enter phone number"></label>
                 </div>
                 <div>
-                    <label>Email Address: <input type="email" name="email_field"></label>
+                    <label>Email Address: <input type="email" name="email_field" placeholder="enter email address"></label>
                 </div>
                 <div>
                     <label>Gender:</label>
-                    <input type="radio" name="gender_field" value="Male">
+                    <input type="radio" name="gender_field" value="Male" id="male">
                     <label for="Male">Male</label>
-                    <input type="radio" name="gender_field" value="Female">
+                    <input type="radio" name="gender_field" value="Female" id="female">
                     <label for="Female">Female</label>
                 </div>
                 <div>
@@ -41,9 +41,6 @@
                     </select>
                 </div>
             </fieldset>
-
-            <input name="hidden_field" type="hidden" value="agrabowski">
-
             <fieldset>
             <legend>My Availability</legend>
                 <label>Days Available:</label>
@@ -71,10 +68,9 @@
                 <div>
                     <label>Any Comments?</label>
                 </div>
-
-                <textarea name="comments_field" rows="7" cols="50"></textarea>
-
+                <textarea name="comments_field" rows="7" cols="50" placeholder="Place any additional comments here!"></textarea>
             </fieldset>
+            <input name="hidden_field" type="hidden" value="agrabowski">
             <input type="submit" value="Send Me">
         </form>
     </body>
